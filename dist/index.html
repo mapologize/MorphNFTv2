@@ -17,15 +17,26 @@
         <div class="col-4 card m-3 p-3 text-center">
             <h class="m-1 mx-3 display-6"><strong>MorphNFTv2</strong></h>
             <div class="m-1 mx-3">
-                <input id="_evoid" class="form-control text-center" placeholder="Nft token id">
+                <input id="_change_tokenid" class="form-control text-center" placeholder="Nft token id">
             </div>
             <div class="m-1 mx-3">
-                <input id="_evoform" class="form-control text-center" placeholder="Nft form ( 0-2 )">
+                <input id="_change_formid" class="form-control text-center" placeholder="Nft form ( 0-2 )">
             </div>
-            <button id="evobtn" class="btn btn-primary m-1 mx-3">Check Permission</button>
-            <h class="m-1 mx-3 display-7"><strong>Result :</strong> waitting state</h>
+            <button id="_change_btn" class="btn btn-primary m-1 mx-3">Change Metadata</button>
         </div>
-        
+
+        <div class="col-4 card m-3 p-3 text-center">
+            <div class="m-1 mx-3">
+                <input id="_evo_tokenid" class="form-control text-center" placeholder="Nft token id">
+            </div>
+            <div class="container m-1">
+                <div class="row d-flex justify-content-start">
+                    <h class="col-6"><strong>MaxEvo :</strong> loading...</h>
+                    <button id="_evo_check" class="col-5 btn btn-primary">Check</button>
+                </div>
+            </div>
+        </div>
+
         <div class="col-4 card m-3 p-3 text-center">
             <a class="m-1 mx-3" href="https://opensea.io/collection/morpnftv2" target="_blank">
                 <button class="col-12 btn btn-primary">Opensea Collection</button>
@@ -36,6 +47,9 @@
             <a class="m-1 mx-3" href="https://morphnftv2.netlify.app/.netlify/functions/api/" target="_blank">
                 <button class="col-12 btn btn-primary">apiKey</button>
             </a>
+            <div class="m-1 mx-3 mt-3">
+                <button id="_cnb" class="col-12 btn btn-danger">connect wallet</button>
+            </div>
         </div>
 
     </div>
