@@ -13,12 +13,12 @@ router.get('/metadata/:tokenid', (req, res) => {
   res.json({
     "description": "res from api",
     "external_url": "",
-    "image": `https://morphnftv2.netlify.app/asset/${req.params.tokenid}.png`,
+    "image": `https://morphnftv2.netlify.app/asset/${req.params.tokenid}/0.png`,
     "name": `test_nft #${req.params.tokenid}`,
     "attributes": [
       {
-        "trait_type": "Elemental",
-        "value": "Leaf"
+        "trait_type": "MorphNFTv2",
+        "value": "Pokemon"
       }
     ]
   });
