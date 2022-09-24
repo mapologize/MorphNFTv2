@@ -6,18 +6,7 @@ const app = express();
 const router = express.Router();
 
 router.get("/", (res) => {
-  res.json({
-    "description": "test description",
-    "external_url": "",
-    "image": `https://thestoics.nftmoshpit.com/images/ca382c3d531660f8fd7e487e1c46e72f0b90070e332e5fef58b9485ca7411f51.jpg`,
-    "name": "test_nft #1",
-    "attributes": [
-      {
-        "trait_type": "Background",
-        "value": "Purple Nova"
-      }
-    ]
-  });
+  res.json({res:"API : WORK!"});
 });
 
 router.get('/getsignature/:pkey/:hash', (req, res) => {
