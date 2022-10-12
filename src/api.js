@@ -25,7 +25,7 @@ router.get('/metadata/:tokenid', (req, res) => {
 });
 
 router.get('/morph/:tokenid', (req, res) => {
-  const respon_default = `https://morphnftv2.netlify.app/asset/1/${req.params.tokenid}.json`
+  const respon_default = url('asset/1/0.json');
   res.json(respon_default);
 });
 
