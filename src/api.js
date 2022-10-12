@@ -25,7 +25,7 @@ router.get('/metadata/:tokenid', (req, res) => {
 });
 
 router.get('/morph/:tokenid', (req, res) => {
-  res.json('/');
+  res.json(fetch('./jsondata/1/0.json'));
 });
 
 app.use(`/.netlify/functions/api`, router);
